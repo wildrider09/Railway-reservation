@@ -1,0 +1,352 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/rectangle_thin"
+             tools:context="com.example.roushan.railwayenquiry.Fragments.TrainRouteFragment">
+
+    <TextView
+        android:id="@+id/trainNumberName_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="Train Name/Number : "
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/trainNumberName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="4dp"
+        android:layout_toRightOf="@+id/trainNumberName_textview"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/trainNumberName"
+        android:background="@drawable/rectangle_thin"
+        android:id="@+id/runsOnLayout">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#CABBBBBB"
+            android:layout_below="@+id/runsOn_textview"/>
+
+        <TextView
+            android:id="@+id/runsOn_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="Runs On"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="140dp"
+            android:paddingBottom="4dp"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/sunday_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="SUN"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="6dp"
+            android:layout_below="@+id/runsOn_textview"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="2dp"
+            android:layout_below="@+id/view1"
+            android:layout_height="40dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/monday_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="MON"
+            android:paddingTop="10dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="6dp"
+            android:layout_below="@+id/runsOn_textview"
+            android:layout_toRightOf="@+id/view2"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="2dp"
+            android:layout_below="@+id/view1"
+            android:layout_height="40dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/tuesday_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:text="TUE"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="6dp"
+            android:layout_below="@+id/runsOn_textview"
+            android:layout_toRightOf="@+id/view3"/>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="2dp"
+            android:layout_below="@+id/view1"
+            android:layout_height="40dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="150dp"/>
+
+        <TextView
+            android:id="@+id/wednesday_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="WED"
+            android:paddingTop="10dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="6dp"
+            android:layout_below="@+id/runsOn_textview"
+            android:layout_toRightOf="@+id/view4"/>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="2dp"
+            android:layout_below="@+id/view1"
+            android:layout_height="40dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="205dp"/>
+
+        <TextView
+            android:id="@+id/thursday_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="THU"
+            android:paddingTop="10dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="6dp"
+            android:layout_below="@+id/runsOn_textview"
+            android:layout_toRightOf="@+id/view5"/>
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="2dp"
+            android:layout_below="@+id/view1"
+            android:layout_height="40dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="255dp"/>
+
+        <TextView
+            android:id="@+id/friday_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:text="FRI"
+            android:paddingRight="8dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="6dp"
+            android:layout_below="@+id/runsOn_textview"
+            android:layout_toRightOf="@+id/view6"/>
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="2dp"
+            android:layout_below="@+id/view1"
+            android:layout_height="40dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="295dp"/>
+
+        <TextView
+            android:id="@+id/saturday_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="SAT"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingStart="6dp"
+            android:layout_below="@+id/runsOn_textview"
+            android:layout_toRightOf="@+id/view7"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headlines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@+id/runsOnLayout">
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBlack"
+            android:text="\nNo."
+            android:padding="3dp"/>
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="1dp"
+            android:layout_height="62dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="23dp"/>
+
+        <TextView
+            android:id="@+id/stationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="\n   Station"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@+id/view8"
+            android:padding="3dp"/>
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="1dp"
+            android:layout_height="62dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="120dp"/>
+
+        <TextView
+            android:id="@+id/scheduledArrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Sch.\nArrival"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="122dp"
+            android:padding="4dp"/>
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="1dp"
+            android:layout_height="62dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="170dp"/>
+
+        <TextView
+            android:id="@+id/scheduledDeparture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Sch.\nDepar\nture"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@+id/view10"
+            android:padding="4dp"/>
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="1dp"
+            android:layout_height="62dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="220dp"/>
+
+        <TextView
+            android:id="@+id/actualArrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="Halt\n(min)"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@+id/view11"
+            android:padding="4dp"/>
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="1dp"
+            android:layout_height="62dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="270dp"/>
+
+        <TextView
+            android:id="@+id/actualDeparture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="\n Day"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@+id/view12"
+            android:padding="4dp"/>
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="1dp"
+            android:layout_height="62dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="320dp"/>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Path\n(km)"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@+id/view13"
+            android:padding="4dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/set_trainRoute_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headlines"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <ProgressBar
+        android:id="@+id/trainRoute_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:theme="@style/AppTheme.WhiteAccent"/>
+
+</RelativeLayout>

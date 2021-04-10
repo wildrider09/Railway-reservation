@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@drawable/rectangle_thin"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+              android:layout_marginTop="2dp"
+              android:layout_marginBottom="2dp">
+
+    <TextView
+        android:id="@+id/passengerNo_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passenger Number : "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/passengerNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="10dp"
+        android:layout_toRightOf="@+id/passengerNo_textview"/>
+
+    <TextView
+        android:id="@+id/bookingStatus_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Status : "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/passengerNo_textview"/>
+
+    <TextView
+        android:id="@+id/bookingStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S7,59,GN"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/passengerNo_textview"
+        android:layout_toRightOf="@+id/bookingStatus_textview"/>
+
+    <TextView
+        android:id="@+id/currentStatus_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Status : "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/bookingStatus_textview"/>
+
+    <TextView
+        android:id="@+id/currentStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S7,59"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/bookingStatus_textview"
+        android:layout_toRightOf="@+id/currentStatus_textview"/>
+
+    <TextView
+        android:id="@+id/coachPosition_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coach Position : "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="10dp"
+        android:paddingLeft="3dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/passengerNo"/>
+
+    <TextView
+        android:id="@+id/coachPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_toRightOf="@+id/coachPosition_textview"/>
+
+</RelativeLayout>

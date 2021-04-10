@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.roushan.railwayenquiry.Fragments.SeatAvailabilityFragment">
+
+    <TextView
+        android:id="@+id/error_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="6dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/train_name_number_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="Train Name : "
+        android:paddingStart="8dp"
+        android:paddingBottom="2dp"
+        android:layout_below="@+id/error_textview"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/train_name_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:paddingBottom="6dp"
+        android:layout_below="@+id/error_textview"
+        android:layout_alignBottom="@+id/train_name_number_textview"
+        android:layout_toRightOf="@+id/train_name_number_textview"/>
+
+    <TextView
+        android:id="@+id/source_station_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="Source Station : "
+        android:paddingStart="8dp"
+        android:paddingBottom="6dp"
+        android:layout_below="@+id/train_name_number_textview"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/source_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:paddingBottom="6dp"
+        android:layout_alignBottom="@+id/source_station_textview"
+        android:layout_below="@+id/train_name_number_textview"
+        android:layout_toRightOf="@+id/source_station_textview"/>
+
+    <TextView
+        android:id="@+id/destination_station_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="Destination Station : "
+        android:paddingStart="8dp"
+        android:paddingBottom="6dp"
+        android:layout_below="@+id/source_station_textview"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/destination_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:paddingBottom="6dp"
+        android:layout_below="@+id/source_station_textview"
+        android:layout_alignBottom="@+id/destination_station_textview"
+        android:layout_toRightOf="@+id/destination_station_textview"/>
+
+    <TextView
+        android:id="@+id/quota_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="Quota : "
+        android:paddingStart="8dp"
+        android:paddingBottom="6dp"
+        android:layout_below="@+id/destination_station_textview"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/quota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:paddingBottom="6dp"
+        android:layout_alignBottom="@+id/quota_textview"
+        android:layout_below="@+id/destination_station_textview"
+        android:layout_toRightOf="@+id/quota_textview"/>
+
+    <RelativeLayout
+        android:id="@+id/headlines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/rectangle"
+        android:layout_below="@+id/quota_textview">
+
+        <TextView
+            android:id="@+id/serial_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="\n No."
+            android:padding="3dp"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1dp"
+            android:layout_height="62dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="45dp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/view1"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="25dp"
+            android:text="\nDate"
+            android:padding="3dp"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="62dp"
+            android:background="#CABBBBBB"
+            android:layout_marginLeft="155dp"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="Class - XX"
+            android:padding="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/view2"
+            android:layout_marginStart="10dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/seat_status_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headlines"
+        android:layout_marginBottom="4dp"/>
+
+    <ProgressBar
+        android:id="@+id/seat_availability_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:theme="@style/AppTheme.WhiteAccent"/>
+
+</RelativeLayout>

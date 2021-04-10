@@ -1,0 +1,227 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+                android:background="@drawable/rectangle_thin"
+                android:layout_margin="5dp"
+             tools:context="com.example.roushan.railwayenquiry.Fragments.ShowPnrResult">
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="8dp"
+        android:layout_marginLeft="2dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/trainNameNo_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/response"
+        android:text="Train Name / Number : "
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/trainNameNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/response"
+        android:layout_toRightOf="@+id/trainNameNo_textview"/>
+
+    <TextView
+        android:id="@+id/pnr_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PNR : "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/trainNameNo_textview"/>
+
+    <TextView
+        android:id="@+id/pnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_toRightOf="@+id/pnr_textview"
+        android:layout_below="@+id/trainNameNo_textview"/>
+
+    <TextView
+        android:id="@+id/doj_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Journey : "
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_below="@+id/pnr_textview"/>
+
+    <TextView
+        android:id="@+id/doj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_toRightOf="@+id/doj_textview"
+        android:layout_below="@id/pnr_textview"/>
+
+    <TextView
+        android:id="@+id/chartPrepared_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chart Prepared : "
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_below="@+id/doj_textview"/>
+
+    <TextView
+        android:id="@+id/chartPrepared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/doj_textview"
+        android:layout_toRightOf="@+id/chartPrepared_textview"/>
+
+    <TextView
+        android:id="@+id/className_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class : "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@+id/doj"
+        android:layout_toEndOf="@+id/trainNameNo_textview"/>
+
+    <TextView
+        android:id="@+id/className"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_toRightOf="@+id/className_textview"
+        android:layout_below="@+id/doj_textview"/>
+
+    <TextView
+        android:id="@+id/totalPassengers_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Passengers : "
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_below="@+id/className_textview"/>
+
+    <TextView
+        android:id="@+id/totalPassengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/className_textview"
+        android:layout_toRightOf="@+id/totalPassengers_textview"/>
+
+    <TextView
+        android:id="@+id/boardingPoint_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boarding Point : "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorBlack"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/totalPassengers_textview"/>
+
+    <TextView
+        android:id="@+id/boardingPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/totalPassengers_textview"
+        android:layout_toRightOf="@+id/boardingPoint_textview"/>
+
+    <TextView
+        android:id="@+id/reservationUpto_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation Upto : "
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorBlack"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/boardingPoint_textview"/>
+
+    <TextView
+        android:id="@+id/reservationUpto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/boardingPoint_textview"
+        android:layout_toRightOf="@+id/reservationUpto_textview"/>
+
+    <ListView
+        android:id="@+id/passengerDetails_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reservationUpto_textview"/>
+
+    <ProgressBar
+        android:id="@+id/pnr_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:theme="@style/AppTheme.WhiteAccent"/>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE7F6"
+    tools:context="com.example.roushan.railwayenquiry.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vbv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/liveTrain_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Live Train Status"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:background="@color/colorButton"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/pnr_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PNR Status"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:layout_below="@+id/liveTrain_status"
+        android:background="@color/colorButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/train_route"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Train Route"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:layout_below="@+id/pnr_status"
+        android:background="@color/colorButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/seat_availability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seat Availability"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:layout_below="@+id/train_route"
+        android:background="@color/colorButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/train_between_stations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Train Between Stations"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:layout_below="@+id/seat_availability"
+        android:background="@color/colorButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

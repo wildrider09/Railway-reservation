@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE7F6"
+    tools:context="com.example.roushan.railwayenquiry.Activities.TrainBtnStationsActivity">
+
+    <EditText
+        android:id="@+id/source_stationCode"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="From Stn. Code"
+        android:backgroundTint="#7E57C2"
+        android:inputType="text"
+        android:maxLength="3"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        tools:ignore="ContentDescription"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/source_stationCode"
+        android:layout_toEndOf="@+id/source_stationCode"/>
+
+    <EditText
+        android:id="@+id/destination_stationCode"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="To Stn. Code"
+        android:backgroundTint="#7E57C2"
+        android:inputType="text"
+        android:maxLength="3"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignBaseline="@+id/source_stationCode"
+        android:layout_alignBottom="@+id/source_stationCode"
+        android:layout_toRightOf="@+id/right_arrow"/>
+
+    <EditText
+        android:id="@+id/set_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Select Date"
+        android:focusable="false"
+        android:inputType="date"
+        android:backgroundTint="#7E57C2"
+        android:layout_below="@+id/source_stationCode"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/source_stationCode"
+        android:layout_alignEnd="@+id/destination_stationCode"/>
+
+    <Button
+        android:id="@+id/search_trains"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_date"
+        android:text="Search"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:background="@color/colorButton"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"/>
+
+    <FrameLayout
+        android:id="@+id/trains_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_trains"
+        android:layout_marginBottom="4dp"/>
+
+</RelativeLayout>

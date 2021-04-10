@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+                android:background="@drawable/rectangle_thin"
+                android:layout_margin="2dp"
+             tools:context="com.example.roushan.railwayenquiry.Fragments.ShowTrainStatusFragment">
+
+    <TextView
+        android:id="@+id/trainNumber_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:text="Train Number : "
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/trainNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="4dp"
+        android:layout_toRightOf="@+id/trainNumber_textview"/>
+
+    <TextView
+        android:id="@+id/lastLocation_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="Last Location : "
+        android:textColor="@color/colorBlack"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:layout_below="@id/trainNumber_textview"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/lastLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingTop="5dp"
+        android:layout_toRightOf="@+id/lastLocation_textview"
+        android:layout_below="@id/trainNumber_textview"
+        android:paddingBottom="4dp"/>
+
+    <RelativeLayout
+        android:id="@+id/headlines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@+id/lastLocation">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorBlack"
+        android:text="\nNo."
+        android:padding="3dp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="62dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="23dp"/>
+
+    <TextView
+        android:id="@+id/stationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="\n   Station"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@+id/view1"
+        android:padding="3dp"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="1dp"
+        android:layout_height="62dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/scheduledArrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Sch.\nArrival"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="122dp"
+        android:padding="4dp"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="1dp"
+        android:layout_height="62dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="170dp"/>
+
+    <TextView
+        android:id="@+id/scheduledDeparture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Sch.\nDepar\nture"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@+id/view3"
+        android:padding="4dp"/>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="1dp"
+        android:layout_height="62dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="220dp"/>
+
+    <TextView
+        android:id="@+id/actualArrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Actual\nArrival"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@+id/view4"
+        android:padding="4dp"/>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="1dp"
+        android:layout_height="62dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/actualDeparture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Actual\nDepar\nture"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@+id/view5"
+        android:padding="4dp"/>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="1dp"
+        android:layout_height="62dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="320dp"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Path\n(km)"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@+id/view6"
+        android:padding="4dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/trainStatus_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headlines"/>
+
+    <ProgressBar
+        android:id="@+id/trainStatus_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        android:theme="@style/AppTheme.WhiteAccent"/>
+
+</RelativeLayout>

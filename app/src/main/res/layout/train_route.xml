@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/rectangle">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="10"
+        android:padding="4dp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="23dp"/>
+
+    <TextView
+        android:id="@+id/stationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="Lucknow"
+        android:maxLength="10"
+        android:layout_toRightOf="@+id/view1"
+        android:padding="3dp"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/scheduledArrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="12:00"
+        android:layout_marginLeft="122dp"
+        android:padding="4dp"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="170dp"/>
+
+    <TextView
+        android:id="@+id/scheduledDeparture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:maxLength="5"
+        android:text="12:00"
+        android:layout_toRightOf="@+id/view3"
+        android:padding="4dp"/>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="220dp"/>
+
+    <TextView
+        android:id="@+id/halt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="12:00"
+        android:layout_toRightOf="@+id/view4"
+        android:padding="4dp"/>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="270dp"/>
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="20"
+        android:layout_toRightOf="@+id/view5"
+        android:padding="4dp"
+        android:layout_marginLeft="15dp"/>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="320dp"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="1000"
+        android:layout_toRightOf="@+id/view6"
+        android:padding="4dp"/>
+
+</RelativeLayout>

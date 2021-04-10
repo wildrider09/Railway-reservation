@@ -1,2 +1,2 @@
-# Railway-reservation
-An app similar to indian railway where you can book tickets,check availability ,get your prefeered seats,find the seats and do a reservation of tickets.
+# RailwayEnquiry
+This android application tells about train details (status, route, seat availability, pnr and train between stations) in India.

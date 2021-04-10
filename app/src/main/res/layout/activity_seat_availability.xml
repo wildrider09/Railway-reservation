@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDE7F6"
+    tools:context="com.example.roushan.railwayenquiry.Activities.SeatAvailabilityActivity">
+
+    <RelativeLayout
+        android:id="@+id/seat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/enter_train_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Train Number"
+        android:inputType="number"
+        android:maxLength="5"
+        android:backgroundTint="#7E57C2"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/select_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Select Date"
+        android:focusable="false"
+        android:backgroundTint="#7E57C2"
+        android:layout_below="@+id/enter_train_number"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/select_source_stationCode"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="From Stn. Code"
+        android:backgroundTint="#7E57C2"
+        android:inputType="text"
+        android:maxLength="3"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/select_date"
+        android:layout_marginBottom="10dp"
+        android:layout_alignStart="@+id/select_date"/>
+
+    <EditText
+        android:id="@+id/select_destination_stationCode"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="To Stn. Code"
+        android:backgroundTint="#7E57C2"
+        android:inputType="text"
+        android:maxLength="3"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/select_date"
+        android:layout_marginBottom="10dp"
+        android:layout_alignEnd="@+id/select_date"/>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/select_train_class"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Class (Default : Sleeper Class)"
+        android:backgroundTint="#7E57C2"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_below="@+id/select_source_stationCode"
+        android:layout_alignEnd="@+id/select_date"
+        android:layout_alignStart="@+id/select_source_stationCode"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/select_train_quota"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Quota (Default : General Quota)"
+        android:inputType="text"
+        android:backgroundTint="#7E57C2"
+        android:layout_marginBottom="30dp"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_below="@+id/select_train_class"
+        android:layout_alignEnd="@+id/select_train_class"
+        android:layout_alignStart="@+id/select_train_class"/>
+
+    <Button
+        android:id="@+id/search_seat_availability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_train_quota"
+        android:text="Search"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:background="@color/colorButton"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

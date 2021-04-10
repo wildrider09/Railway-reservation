@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RailwayEnquiry</string>
+
+    <string name="railway_URL">http://api.railwayapi.com/</string>
+    <string name="API_KEY">39trrtnw</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

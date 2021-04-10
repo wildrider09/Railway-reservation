@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="10"
+        android:padding="3dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="62dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="45dp"/>
+
+    <TextView
+        android:id="@+id/set_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/view1"
+        android:text="DD-MM-YYYY"
+        android:layout_marginStart="2dp"
+        android:layout_centerVertical="true"
+        android:padding="3dp"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="1dp"
+        android:layout_height="62dp"
+        android:background="#CABBBBBB"
+        android:layout_marginLeft="155dp"/>
+
+    <TextView
+        android:id="@+id/set_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/view2"
+        android:text="TRAIN DEPARTED"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="3dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
